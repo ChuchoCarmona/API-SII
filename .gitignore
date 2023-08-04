@@ -1,0 +1,22 @@
+# # Archivos de configuración local
+# .env
+# settings_local.py
+
+# Archivos y directorios generados automáticamente
+__pycache__/
+*.pyc
+*.pyo
+*.sqlite3
+
+# Dependencias y entornos virtuales
+/venv/
+/env/
+/env*/
+/node_modules/
+/dist/
+/build/
+
+# Archivos de registro y salida
+/logs/
+/log/
+*.log

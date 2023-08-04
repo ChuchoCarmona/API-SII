@@ -4,18 +4,18 @@ from apiproyecto.models import Alumnos, Personal, PeriodosEscolares, Carreras
 class AlumnosSerializers(serializers.ModelSerializer):
     class Meta:
         model = Alumnos
-        fields = '__all__'
-        """
-        fields = ('no_de_control','carrera','reticula','especialidad','nivel_escolar','semestre','clave_interna','estatus_alumno',
-                'plan_de_estudios','apellido_paterno','apellido_materno','nombre_alumno','curp_alumno','fecha_nacimiento',
-                'sexo','estado_civil','tipo_ingreso','periodo_ingreso_it','ultimo_periodo_inscrito','promedio_periodo_anterior',
-                'promedio_aritmetico_acumulado','creditos_aprobados','creditos_cursados','promedio_final_alcanzado','tipo_servicio_medico',
-                'clave_servicio_medico','escuela_procedencia','tipo_escuela','domicilio_escuela',
-                'entidad_procedencia','ciudad_procedencia','correo_electronico','foto','firma','periodos_revalidacion',
-                'indice_reprobacion_acumulado','becado_por','nip','tipo_alumno','nacionalidad','usuario',
-                'fecha_actualizacion','folio','horario_curso_java','pago_curso_java','periodo_estatus',
-                'fecha_titulo','op_titula','cedula','libro','hoja','ultimo_login','id_sesion','ip','autoriza_padres')
-                """
+        fields = ('no_de_control','apellido_paterno','apellido_materno','nombre_alumno','nip')
+        # """
+        # fields = ('no_de_control','carrera','reticula','especialidad','nivel_escolar','semestre','clave_interna','estatus_alumno',
+        #         'plan_de_estudios','apellido_paterno','apellido_materno','nombre_alumno','curp_alumno','fecha_nacimiento',
+        #         'sexo','estado_civil','tipo_ingreso','periodo_ingreso_it','ultimo_periodo_inscrito','promedio_periodo_anterior',
+        #         'promedio_aritmetico_acumulado','creditos_aprobados','creditos_cursados','promedio_final_alcanzado','tipo_servicio_medico',
+        #         'clave_servicio_medico','escuela_procedencia','tipo_escuela','domicilio_escuela',
+        #         'entidad_procedencia','ciudad_procedencia','correo_electronico','foto','firma','periodos_revalidacion',
+        #         'indice_reprobacion_acumulado','becado_por','nip','tipo_alumno','nacionalidad','usuario',
+        #         'fecha_actualizacion','folio','horario_curso_java','pago_curso_java','periodo_estatus',
+        #         'fecha_titulo','op_titula','cedula','libro','hoja','ultimo_login','id_sesion','ip','autoriza_padres')
+        #         """
         
 class PersonalSerializers(serializers.ModelSerializer):
     class Meta:
